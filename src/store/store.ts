@@ -15,8 +15,8 @@ export const usePostsStore = defineStore("posts", {
     filteredPosts(state) {
       const searchResults = state.searchTerm
         ? state.posts.filter((post) =>
-            post.title.toLowerCase().includes(state.searchTerm.toLowerCase())
-          )
+          post.title.toLowerCase().includes(state.searchTerm.toLowerCase())
+        )
         : state.posts;
 
       const startIndex = (state.currentPage - 1) * state.pageSize;
@@ -40,7 +40,7 @@ export const usePostsStore = defineStore("posts", {
       this.selectedPost = null;
     },
     setSearchTerm(term: string) {
-      // Nueva función de acción
+
       this.searchTerm = term;
     },
 

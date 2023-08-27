@@ -21,3 +21,9 @@ Este proyecto fue creado como parte del proceso de selección de Wited para eval
 
 ```bash
 git clone https://github.com/Jandrocks/posts-test
+
+2. Ejecutar el proyecto ruta raiz:
+
+```bash
+npm install
+
