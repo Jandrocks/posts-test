@@ -1,9 +1,3 @@
-<script setup lang="ts">
-import { usePostsStore } from "../store/store";
-const { nextPage, previousPage } = usePostsStore();
-const postsStore = usePostsStore();
-</script>
-
 <template>
     <div class="mt-4 mb-8 flex justify-center items-center">
         <button @click="previousPage" :disabled="postsStore.currentPage === 1"
@@ -19,3 +13,11 @@ const postsStore = usePostsStore();
         </button>
     </div>
 </template>
+
+<script setup lang="ts">
+import { usePostsStore } from "../store/store";
+const { nextPage, previousPage } = usePostsStore();
+const postsStore = usePostsStore();
+</script>
+
+

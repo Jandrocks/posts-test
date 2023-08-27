@@ -1,12 +1,3 @@
-<script setup lang="ts">
-import { usePostsStore } from "../store/store";
-const postsStore = usePostsStore();
-
-const closeModal = () => {
-    postsStore.clearSelectedPost();
-};
-</script>
-
 <template>
     <div v-if="postsStore.selectedPost" class="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center">
         <div class="bg-black p-8 rounded m-4 max-w-full lg:max-w-xl">
@@ -19,3 +10,14 @@ const closeModal = () => {
         </div>
     </div>
 </template>
+
+<script setup lang="ts">
+import { usePostsStore } from "../store/store";
+const postsStore = usePostsStore();
+
+const closeModal = () => {
+    postsStore.clearSelectedPost();
+};
+</script>
+
+
