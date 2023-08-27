@@ -37,9 +37,11 @@ const closeModal = () => {
       class="block mx-auto mb-4 p-2 border border-sky-300 rounded w-full md:w-1/2 lg:w-1/3"
       placeholder="Buscar por título..."
     />
-    <PostList :posts="postsStore.filteredPosts" />
-    <!-- Usa posts filtrados aquí -->
 
+    <!-- FILTRADO - CARGA INICIAL -->
+    <PostList :posts="postsStore.filteredPosts" />
+    
+    <!-- PAGINADO -->
     <div class="mt-4 flex justify-center">
       <button @click="previousPage" :disabled="postsStore.currentPage === 1">
         Anterior
@@ -48,15 +50,15 @@ const closeModal = () => {
       <button @click="nextPage">Siguiente</button>
     </div>
 
-    <div
-      v-if="postsStore.selectedPost"
-      class="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center"
-    >
+    <!-- MODAL -->
+    <div v-if="postsStore.selectedPost" class="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center">
       <div class="bg-black p-8 rounded">
         <h3>{{ postsStore.selectedPost.title }}</h3>
         <p>{{ postsStore.selectedPost.body }}</p>
         <button @click="closeModal">Cerrar</button>
       </div>
     </div>
+
+
   </div>
 </template>
