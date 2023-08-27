@@ -9,22 +9,20 @@
 </template>
 
 <script setup lang="ts">
-import { onMounted } from "vue";
-import { usePostsStore } from "./store/store";
-import PostHeader from "./components/PostHeader.vue";
-import PostList from "./components/PostList.vue";
-import PostModal from "./components/PostModal.vue";
-import PostPaginator from "./components/PostsPaginator.vue";
-import SearchInput from "./components/PostSearchInput.vue";
+import { onMounted } from "vue"
+import { usePostsStore } from "./store/store"
+import PostHeader from "./components/PostHeader.vue"
+import PostList from "./components/PostList.vue"
+import PostModal from "./components/PostModal.vue"
+import PostPaginator from "./components/PostsPaginator.vue"
+import SearchInput from "./components/PostSearchInput.vue"
 
-const postsStore = usePostsStore();
+const postsStore = usePostsStore()
 
 const fetchPosts = () => {
-  postsStore.fetchPosts();
-};
+  postsStore.fetchPosts()
+}
 onMounted(() => {
-  fetchPosts();
-});
+  fetchPosts()
+})
 </script>
-
-

@@ -25,21 +25,22 @@ Sigue estos pasos para ejecutar el proyecto localmente:
 
 1. **Clonar el repositorio**
 
-    ```bash
-    git clone https://github.com/Jandrocks/posts-test
-    ```
+   ```bash
+   git clone https://github.com/Jandrocks/posts-test
+   ```
 
 2. **Instalar las dependencias y ejecutar el proyecto**
 
-    Dirígete al proyecto y ejecuta:
+   Dirígete al proyecto y ejecuta:
 
-    ```bash
-    npm install
-    ```
-    Dirígete a la raiz y ejecuta:
+   ```bash
+   npm install
+   ```
 
-    ```bash
-    npm run dev
-    ```
+   Dirígete a la raiz y ejecuta:
+
+   ```bash
+   npm run dev
+   ```
 
 ¡Listo! Ahora deberías poder ver la aplicación corriendo en tu navegador local.
