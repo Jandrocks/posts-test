@@ -9,7 +9,7 @@ Este proyecto se construyó utilizando las siguientes tecnologías:
 - **Vue 3:** Framework progresivo de JavaScript para construir interfaces de usuario.
 - **TypeScript:** Extiende JavaScript añadiendo tipos estáticos.
 - **Axios:** Biblioteca de JavaScript para realizar solicitudes HTTP.
-- **Pinta:** (Describe brevemente qué hace o su utilidad).
+- **Pinia:** Pinia es una biblioteca de tienda para Vue, le permite compartir un estado entre componentes/páginas.
 - **TailwindCSS:** Un framework de CSS de utilidad para construir rápidamente interfaces de usuario personalizadas.
 
 ## 📦 Requisitos previos
@@ -31,10 +31,14 @@ Sigue estos pasos para ejecutar el proyecto localmente:
 
 2. **Instalar las dependencias y ejecutar el proyecto**
 
-    Dirígete a la ruta raíz del proyecto y ejecuta:
+    Dirígete al proyecto y ejecuta:
 
     ```bash
     npm install
+    ```
+    Dirígete a la raiz y ejecuta:
+
+    ```bash
     npm run dev
     ```
 
