@@ -1,6 +1,6 @@
 # APP TEST POST
 
-[Este proyecto fue creado como parte del proceso de selección de Wited para evaluar mis habilidades y competencias en el desarrollo con Vue 3, TypeScript, Axios, Pinta ]
+Este proyecto fue creado como parte del proceso de selección de Wited para evaluar mis habilidades y competencias en el desarrollo con Vue 3, TypeScript, Axios, Pinta 
 
 ## Tecnologías utilizadas
 
@@ -20,4 +20,4 @@
 1. Clonar el repositorio:
 
 ```bash
-git clone [https://github.com/Jandrocks/posts-test]
+git clone https://github.com/Jandrocks/posts-test
